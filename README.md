@@ -32,7 +32,7 @@ Test Files:
 
 BASELINE MODEL PERFORMANCE
 ==========================
-In the aforementioned journal article, we have proposed two different approach to address the problem, a model-based and a learning-based. The first method is model-based (MB) and uses a combination of Dynamic Time Wrapping and statistical bounds to analyze four water end-use characteristics. The second learning-based (LB) method is data-driven and formulates the problem as a time-series classification problem without relying on a priori identification of events. Initially four algorithms are considered for the LB method: Support Vector Machine (SVM), Random Forest (RF), Extreme Gradient Boosting (XGBoost) and Multilayer Perception (MLP) with the last one been the most accurate. 
+In the aforementioned journal article, we have proposed two different approach to address the problem, a model-based and a learning-based. The first method is model-based (MB) and uses a combination of Dynamic Time Wrapping and statistical bounds to analyze four water end-use characteristics. The second learning-based (LB) method is data-driven and formulates the problem as a time-series classification problem without relying on a priori identification of events. Initially four algorithms are considered for the LB method: Support Vector Machine (SVM), Random Forest (RF), Extreme Gradient Boosting (XGBoost) and Multilayer Perception (MLP). We opted to proceed using the MLP model since the performance is close to the XGBoost model and it is more applicable for integration on a microprocessor.
 
 |          | MLP   | XGBoost | RF    | SVM   |
 |----------|-------|---------|-------|-------|
@@ -44,4 +44,9 @@ The results from the MB and the selected LB approach are presented below:
 |--------------|---------------|--------------|-------------------|-------------|
 | LB           | 77.61         | 71.73        | 71.62             | 83.36       |
 | MB           | 71.88         | 71.04        | 70.82             | 84.93       |
+
+The results from the MLP model on the microprocessor:
+|              | Precision (%) | F1-score (%) | Cohen’s Kappa (%) | 
+|--------------|---------------|--------------|-------------------|
+| LB (MLP)          | 78.01        |72.01        | 71.82            | 
 
