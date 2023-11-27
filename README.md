@@ -34,13 +34,14 @@ BASELINE MODEL PERFORMANCE
 ==========================
 In the aforementioned journal article, we have proposed two different approach to address the problem, a model-based and a learning-based. The first method is model-based (MB) and uses a combination of Dynamic Time Wrapping and statistical bounds to analyze four water end-use characteristics. The second learning-based (LB) method is data-driven and formulates the problem as a time-series classification problem without relying on a priori identification of events. Initially four algorithms are considered for the LB method: Support Vector Machine (SVM), Random Forest (RF), Extreme Gradient Boosting (XGBoost) and Multilayer Perception (MLP) with the last one been the most accurate. 
 
-	        MLP	XGBoost	RF	SVM
-Accuracy (%)	98.89	98.78	96.51	98.34
-F1-Micro (%)	71.73	71.98	55.75	65.29
+|          | MLP   | XGBoost | RF    | SVM   |
+|----------|-------|---------|-------|-------|
+| Accuracy (%) | 98.89 | 98.78   | 96.51 | 98.34 |
+| F1-Micro (%) | 71.73 | 71.98   | 55.75 | 65.29 |
 
 The results from the MB and the selected LB approach are presented below:
+|              | Precision (%) | F1-score (%) | Cohen’s Kappa (%) | ROC-AUC (%) |
+|--------------|---------------|--------------|-------------------|-------------|
+| LB           | 77.61         | 71.73        | 71.62             | 83.36       |
+| MB           | 71.88         | 71.04        | 70.82             | 84.93       |
 
-		Model Performance
-	Precision (%)	F1-score (%)	Cohen’s Kappa (%)	ROC-AUC (%)
-LB	77.61	        71.73	        71.62	                83.36
-MB	71.88	        71.04	        70.82	                84.93
