@@ -44,8 +44,3 @@ The results from the MB and the selected LB approach are presented below:
 	Precision (%)	F1-score (%)	Cohen’s Kappa (%)	ROC-AUC (%)
 LB	77.61	        71.73	        71.62	                83.36
 MB	71.88	        71.04	        70.82	                84.93
-
-
-LICENCE
-=======
-TODO
